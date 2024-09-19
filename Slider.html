@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            background: rgb(17, 17, 17);
+        }
+        
+        .image-slider {
+            margin-left: 15rem;
+            position: relative;
+            display: inline-block;
+            line-height: 0;
+        }
+        
+        .image-slider img {
+            user-select: none;
+            max-width: 1500px;
+        }
+        
+        .image-slider > div {
+            position: absolute;
+            width: 25px;
+            max-width: 100%;
+            overflow: hidden;
+            resize: horizontal;
+        }
+        
+        .image-slider > div:before {
+            content: '';
+            display: block;
+            width: 13px;
+            height: 13px;
+            overflow: hidden;
+            position: absolute;
+            resize: horizontal;
+            right: 3px;
+            bottom: 3px;
+            background-clip: content-box;
+            background: linear-gradient(-45deg, rgb(145, 9, 9) 50%, transparent 0);
+            -webkit-filter: drop-shadow(0 0 2px rgb(138, 7, 7));
+            filter: drop-shadow(0 0 2px rgb(0, 0, 0));
+        }
+    </style>
+</head>
+
+<body>
+    <div style="margin: 3rem; 
+                font-family: Roboto, sans-serif">
+        <h1 style="color: rgb(10, 110, 156)">
+            Servicios Integrales de Mapeo Urbanistica y Tecnologías
+        </h1>
+        <h3 style="color: aliceblue">
+            Visualizador de series de tiempo
+        </h3> 
+    </div>
+    <div>
+        <div class="image-slider">
+            <div> 
+                <img src=
+"imagen1.jpg"
+                     alt="GFG_Image"/> 
+            </div> 
+                <img src=
+"imagen2.jpg" 
+                    alt="GFG_Image"/> 
+        </div>
+    </div>
+</body>
+  
+</html>
